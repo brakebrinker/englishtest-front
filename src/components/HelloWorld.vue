@@ -80,6 +80,7 @@
         </a>
       </li>
     </ul>
+    <button class="btn btn-primary">Send</button>
   </div>
 </template>
 
