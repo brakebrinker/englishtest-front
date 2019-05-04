@@ -8,7 +8,8 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-axios.defaults.baseURL = 'http://localhost:8000/api'
+axios.defaults.baseURL = process.env.API_ENDPOINT
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = 'http://localhost:8080'
 
 Vue.use(BootstrapVue)
 
